@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body {
+    background-color: powderblue;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+}
+
+/* Header Styling starts */
+
+#title {
+    font-size: 3em;
+    font-weight: 700;
+    color: indigo;
+    float: right;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+/* Header Styling ends */
+
+/* Form Styling starts */
+
+#displayLogin, #displayRegister {
+    border: none;
+    background-color: rgb(0, 0, 255);
+    color: white;
+    width: 50%;
+    padding: 10px 17px;
+    font-size: 1.2em;
+    border-top-left-radius: 2px;
+
+    border-bottom-left-radius: 2px;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+#displayRegister {
+    padding: 8px 15px;
+    border-radius: 0 2px 2px 0;
+    background-color: rgb(172, 27, 230);
+}
+
+input[type=text], input[type=password], input[type=email] {
+    width: 100%;
+    line-height: 25px;
+    font-size: 0.875em;
+    text-align: center;
+    margin-bottom: 1.75rem;
+    outline: none;
+}
+
+/* input[type=text]:focus, input[type=password]:focus, input[type=email]:focus {
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 199, 0.25);
+    border-style: inset;
+}  */
+
+input[type=submit] {
+    width: 101%;
+    padding: 10px;
+    color: white;
+    font-size: 1.05em;
+    border: 0;
+    background-color: blue;
+    box-shadow: 1px 2px 3px 2px rgba(0, 0, 199, 0.25);
+}
+
+.text {
+    text-align: center;
+    margin: 25px 0 30px 0;
+}
+
+#sub-div-form {
+    margin-right: auto;
+    margin-left: auto;
+    width: 40%;
+    margin-top: 30px;
+}
+
+/* Form Styling ends */
+
+a {
+    font-size: larger;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:link {
+    color: darksalmon;
+}
+
+a:visited {
+    color: brown;
+}
+
+a:active {
+    color: deeppink;
+}
+
+#not-found {
+    text-align: center;
+    margin-top: 50px;
+}
+
+@media only screen and (max-width: 1002px) {
+    #displayLogin, #displayRegister {
+        display: block;
+        width: 100%;
+    }
+}

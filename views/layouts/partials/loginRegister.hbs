@@ -1,0 +1,45 @@
+<div id="sub-div-form">
+    <button id="displayLogin">Login</button><button id="displayRegister">Register</button>
+    <div id="login">
+        <form action="/login/user" method="post">
+            <p class="text">Log in to manage your account</p>
+            <input type="email" name="email" class="email" placeholder="Email ID"><br>
+            <input type="password" name="password" class="password" placeholder="Password"><br>
+            <input type="submit" name="login-button" id="login-button" value="Log in">
+        </form>
+    </div>
+    <div id="register" style="display:none;">
+        <form action="/login/user" method="post">
+            <p class="text">Register to continue</p>
+            <input type="text" name="name" id="name" placeholder="Name"><br>
+            <input type="text" name="eno" id="enumber" placeholder="Enrollment Number"><br>
+            <input type="email" name="email" class="email" placeholder="Email ID"><br>
+            <input type="password" name="password" class="password" placeholder="Password"><br>
+            <input type="submit" name="register-button" id="register-button" value="Sign up">
+        </form>
+    </div>
+    <script>
+        let loginDiv = document.getElementById('login');
+        let registerDiv = document.getElementById('register');
+        let displayRegister = document.getElementById('displayRegister');
+        let displayLogin = document.getElementById('displayLogin');
+
+        displayRegister.addEventListener('click', function () {
+            loginDiv.style.display = "none";
+            registerDiv.style.display = "block";
+            displayRegister.style.backgroundColor = "rgb(0, 0, 255)";
+            displayRegister.style.padding = "10px 17px";
+            displayLogin.style.padding = "8px 15px";
+            displayLogin.style.backgroundColor = "rgb(172, 27, 230)";
+        });
+
+        displayLogin.addEventListener('click', function () {
+            loginDiv.style.display = "block";
+            registerDiv.style.display = "none";
+            displayRegister.style.backgroundColor = "rgb(172, 27, 230)";
+            displayLogin.style.backgroundColor = "rgb(0, 0, 255)";
+            displayRegister.style.padding = "8px 15px";
+            displayLogin.style.padding = "10px 17px";
+        });
+    </script>
+</div>
